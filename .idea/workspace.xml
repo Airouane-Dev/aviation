@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7339b642-9a6b-4611-92f2-b52977796e35" name="Default Changelist" comment="feat: controller home" />
+    <list default="true" id="7339b642-9a6b-4611-92f2-b52977796e35" name="Default Changelist" comment="feat: root routes">
+      <change afterPath="$PROJECT_DIR$/lib/seed_csv/flights.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +36,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Airouane\RubymineProjects\aviation\lib\seed_csv" />
+      <recent name="C:\Users\Airouane\RubymineProjects\aviation\db" />
+    </key>
   </component>
   <component name="RunManager" selected="Rails.Development: aviation">
     <configuration name="Development: aviation" type="RailsRunConfigurationType" factoryName="Rails">
@@ -130,7 +140,7 @@
       <option name="presentableId" value="Default" />
       <updated>1623398199488</updated>
       <workItem from="1623398201323" duration="4216000" />
-      <workItem from="1623945924597" duration="1361000" />
+      <workItem from="1623945924597" duration="3048000" />
     </task>
     <task id="LOCAL-00001" summary="feat: create project">
       <created>1623398390785</created>
@@ -146,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623947121510</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: root routes">
+      <created>1623947512797</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1623947512797</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,7 +184,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: create project" />
     <MESSAGE value="feat: controller home" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: controller home" />
+    <MESSAGE value="feat: root routes" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: root routes" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/aviation@Development__aviation.rcov" NAME="Development: aviation Coverage Results" MODIFIED="1623946215324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="aviation" />
