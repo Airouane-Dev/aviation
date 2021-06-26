@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7339b642-9a6b-4611-92f2-b52977796e35" name="Default Changelist" comment="feat: root routes">
-      <change afterPath="$PROJECT_DIR$/lib/seed_csv/flights.csv" afterDir="false" />
+    <list default="true" id="7339b642-9a6b-4611-92f2-b52977796e35" name="Default Changelist" comment="refactor: gitignore">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d24e7b39-6aea-437f-a91d-d6d3f68b1a1e.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/shared/_navbar.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_navbar.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +19,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../../../Ruby30-x64/lib/ruby/gems/3.0.0/gems/bootsnap-1.7.5/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../Ruby30-x64/lib/ruby/gems/3.0.0/gems/devise-4.8.0/lib/devise/controllers/sign_in_out.rb" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -141,6 +157,7 @@
       <updated>1623398199488</updated>
       <workItem from="1623398201323" duration="4216000" />
       <workItem from="1623945924597" duration="3048000" />
+      <workItem from="1624720276738" duration="1037000" />
     </task>
     <task id="LOCAL-00001" summary="feat: create project">
       <created>1623398390785</created>
@@ -188,6 +205,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="feat: root routes" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/aviation@Development__aviation.rcov" NAME="Development: aviation Coverage Results" MODIFIED="1623946215324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="aviation" />
+    <SUITE FILE_PATH="coverage/aviation@Development__aviation.rcov" NAME="Development: aviation Coverage Results" MODIFIED="1624216486275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="aviation" />
   </component>
 </project>
