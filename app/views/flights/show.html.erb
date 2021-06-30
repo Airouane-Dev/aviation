@@ -4,50 +4,82 @@
   <h1 style="text-align: center; font-weight: bold">Flight Informations</h1>
 </div>
 
-<p class="dot">
-  <span>User:  <%= current_user.id %></span>
 
-</p>
+<div class="row" style="text-align: center; margin-top: 40px">
+  <div class="col-sm">
+    <p class="dot">
+      <span><%= @flight.number %></span>
+    </p>
+  </div>
+  <div class="col-sm">
+    <p class="dot">
+      <span><%= @flight.departure_airport %></span>
+    </p>
+  </div>
+  <div class="col-sm">
+    <p class="dot">
+      <span><%= @flight.arrival_airport %></span>
+    </p>
+  </div>
+  <div class="col-sm">
+    <p class="dot">
+      <span><%= @flight.business_class_seats %></span>
+    </p>
+  </div>
+  <div class="col-sm">
+    <p class="dot">
+      <span><%= @flight.economy_class_seats %></span>
+    </p>
+  </div>
+  <div class="col-sm">
+    <p class="dot">
+      <span> <%= @flight.duration %> minutes</span>
+    </p>
+  </div>
+  <div class="col-sm">
+    <p class="dot">
+      <span>  <%= @flight.departure_date.strftime("%d/%m/%Y à %H:%M") %></span>
+    </p>
+  </div>
+  <div class="col-sm">
+    <p class="dot">
+      <span> <%= (@flight.departure_date + @flight.duration*60).strftime("%d/%m/%Y à %H:%M") %></span>
+    </p>
+  </div>
+</div>
 
-<p>
-  <strong>Number:</strong>
-  <%= @flight.number %>
-</p>
 
-<p>
-  <strong>Departure airport:</strong>
-  <%= @flight.departure_airport %>
-</p>
+<div class="row" style="text-align: center">
+  <div class="col-sm">
+    <strong>Number</strong>
+  </div>
+  <div class="col-sm">
+    <strong>Departure airport</strong>
+  </div>
+  <div class="col-sm">
+    <strong>Arrival airport</strong>
+  </div>
+  <div class="col-sm">
+    <strong>Business class seats</strong>
+  </div>
+  <div class="col-sm">
+    <strong>Economy class seats</strong>
+  </div>
+  <div class="col-sm">
+    <strong>Duration</strong>
+  </div>
+  <div class="col-sm">
+    <strong>Departure date</strong>
+  </div>
+  <div class="col-sm">
+    <strong>Arrival date</strong>
+  </div>
 
-<p>
-  <strong>Arrival airport:</strong>
-  <%= @flight.arrival_airport %>
-</p>
+</div>
 
-<p>
-  <strong>Business class seats:</strong>
-  <%= @flight.business_class_seats %>
-</p>
 
-<p>
-  <strong>Economy class seats:</strong>
-  <%= @flight.economy_class_seats %>
-</p>
+<div style="text-align: center; margin-top: 50px">
+  <%= link_to '<span style="color:white;">Edit <i class="bi bi-pencil"></i></span>'.html_safe, edit_flight_path(@flight), class: "btn btn-info" %>
+  <%= link_to '<span style="color:white;">Home <i class="bi bi-house"></i> </span>'.html_safe, flights_path,class: "btn btn-dark" %>
+</div>
 
-<p>
-  <strong>Duration:</strong>
-  <%= @flight.duration %>
-</p>
-
-<p>
-  <strong>Departure date:</strong>
-  <%= @flight.departure_date %>
-</p>
-
-<p>
-  <strong>Arrival date</strong>
-  <%= @flight.departure_date + @flight.duration %>
-</p>
-
-<%= link_to 'Edit', edit_flight_path(@flight) %> |
-<%= link_to 'Back', flights_path %>

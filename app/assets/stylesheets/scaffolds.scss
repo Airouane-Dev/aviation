@@ -67,14 +67,19 @@ label {
 .dot {
   height: 100px;
   width: 100px;
-  background-color: #85C1E9;
+  background-color: #565656;
   border-radius: 50%;
   text-align: center;
   display: inline-block;
 }
 
 .dot span{
-  top:45px;
+  top:40px;
   position: relative;
   font-weight: bold;
+  color: white;
+}
+
+.desc{
+  text-align: center;
 }
