@@ -9,9 +9,6 @@
           <th scope="col">Number</th>
           <th scope="col">Departure airport</th>
           <th scope="col">Arrival airport</th>
-          <th scope="col">Business class seats</th>
-          <th scope="col">Economy class seats</th>
-          <th scope="col">Duration</th>
           <th scope="col">Departure date</th>
           <th scope="col">Arrival date</th>
           <th scope="col" colspan="3">Actions</th>
@@ -23,9 +20,6 @@
           <td><%= flight.number %></td>
           <td><%= flight.departure_airport %></td>
           <td><%= flight.arrival_airport %></td>
-          <td><%= flight.business_class_seats %></td>
-          <td><%= flight.economy_class_seats %></td>
-          <td><%= flight.duration %></td>
           <td><%= flight.departure_date.strftime("%d/%m/%Y à %H:%M") %></td>
           <td><%= (flight.departure_date + flight.duration*60).strftime("%d/%m/%Y à %H:%M") %></td>
           <td>
