@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Registrations</h1>
+
+<div class="table-responsive">
+  <table class="table" style="text-align: center">
+    <thead>
+    <tr>
+      <th scope="col">registration_id</th>
+      <th scope="col">class_seats</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% @registrations.each do |registration| %>
+      <tr>
+        <td>test</td>
+        <td>test</td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>
+
+
+<br>
+
+
+<%= link_to 'New Registration', new_registration_path %>
