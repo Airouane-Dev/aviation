@@ -1,0 +1,34 @@
+<%= form_with(model: registration) do |form| %>
+  <% if registration.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(registration.errors.count, "error") %> prohibited this registration from being saved:</h2>
+
+      <ul>
+        <% registration.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <p>
+    <strong>User:</strong>
+    <%= current_user.id %>
+  </p>
+
+  <div class="field">
+    <%= form.label :class_seats %>
+    <%= form.text_field :class_seats %>
+  </div>
+
+  <input type="hidden" name="registration[user_id]" id="registration_user_id" value="<%= current_user.id %>" />
+
+  <div class="field">
+    <%= form.label :flight_id %>
+    <%= form.number_field :flight_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
