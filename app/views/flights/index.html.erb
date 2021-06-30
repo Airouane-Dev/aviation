@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Flights</h1>
+<h1 style="text-align: center; margin-bottom: 30px;">Flights</h1>
 
 <div class="table-responsive">
     <table class="table" style="text-align: center">
@@ -26,21 +26,21 @@
           <td><%= flight.business_class_seats %></td>
           <td><%= flight.economy_class_seats %></td>
           <td><%= flight.duration %></td>
-          <td><%= flight.departure_date %></td>
-          <td><%= flight.departure_date + flight.duration %></td>
+          <td><%= flight.departure_date.strftime("%d/%m/%Y à %H:%M") %></td>
+          <td><%= (flight.departure_date + flight.duration*60).strftime("%d/%m/%Y à %H:%M") %></td>
           <td>
             <!--<%#= link_to 'Show', flight %>-->
-            <%= link_to flight_path(flight.id) do %><i class="bi bi-eye"></i><% end %>
+            <%= link_to flight_path(flight.id) do %><i class="bi bi-eye" title="SHOW"></i><% end %>
           </td>
 
           <td>
             <!--<%#= link_to 'Edit', edit_flight_path(flight) %>-->
-            <%= link_to edit_flight_path(flight) do %><i class="bi bi-pencil"></i><% end %>
+            <%= link_to edit_flight_path(flight) do %><i class="bi bi-pencil" style="color:dodgerblue;" title="EDIT"></i><% end %>
           </td>
 
           <td>
     <!--        <%#= link_to edit_flight_path(flight) do %><i class="bi bi-trash"></i><%# end %>-->
-            <%= link_to '<i class="bi bi-trash"></i>'.html_safe, flight, method: :delete, data: { confirm: 'Are you sure?' } %>
+            <%= link_to '<i class="bi bi-trash" style="color:red;" title="DELETE"></i>'.html_safe, flight, method: :delete, data: { confirm: 'Are you sure?' } %>
           </td>
         </tr>
       <% end %>

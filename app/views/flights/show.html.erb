@@ -1,5 +1,13 @@
 <p id="notice"><%= notice %></p>
 
+<div>
+  <h1 style="text-align: center; font-weight: bold">Flight Informations</h1>
+</div>
+
+<p class="dot">
+  <span>User:  <%= current_user.id %></span>
+</p>
+
 <p>
   <strong>Number:</strong>
   <%= @flight.number %>
@@ -42,4 +50,6 @@
 
 <%= link_to 'Edit', edit_flight_path(@flight) %> |
 <%= link_to 'Back', flights_path %> |
-<%= link_to 'Reserve this flight', new_registration_path %>
+
+
+<%= link_to 'Reserve this flight', new_registration_path(@flight.id) %>

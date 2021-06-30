@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="7339b642-9a6b-4611-92f2-b52977796e35" name="Default Changelist" comment="refactor: gitignore" />
+=======
+    <list default="true" id="7339b642-9a6b-4611-92f2-b52977796e35" name="Default Changelist" comment="refactor: gitignore">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+>>>>>>> refs/remotes/origin/main
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -217,6 +223,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="feat: root routes" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/aviation@Development__aviation.rcov" NAME="Development: aviation Coverage Results" MODIFIED="1625034565152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="aviation" />
+    <SUITE FILE_PATH="coverage/aviation@Development__aviation.rcov" NAME="Development: aviation Coverage Results" MODIFIED="1625038665100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="aviation" />
   </component>
 </project>
