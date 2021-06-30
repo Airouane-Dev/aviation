@@ -15,6 +15,7 @@
           <th scope="col">Economy class seats</th>
           <th scope="col">Duration</th>
           <th scope="col">Departure date</th>
+          <th scope="col">Arrival date</th>
         </tr>
       </thead>
       <tbody>
@@ -28,6 +29,7 @@
           <td><%= flight.economy_class_seats %></td>
           <td><%= flight.duration %></td>
           <td><%= flight.departure_date %></td>
+          <td><%= flight.departure_date + flight.duration %></td>
           <td>
             <!--<%#= link_to 'Show', flight %>-->
             <%= link_to flight_path(flight.id) do %><i class="bi bi-eye"></i><% end %>
