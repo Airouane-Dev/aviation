@@ -11,22 +11,16 @@
     </div>
   <% end %>
 
-  <p>
-    <strong>User:</strong>
-    <%= current_user.id %>
-  </p>
-
   <div class="field">
     <%= form.label :class_seats %>
-    <%= form.text_field :class_seats %>
+    <select name="pets" name="registration[class_seats]" id="registration_class_seats">
+      <option value="business">business</option>
+      <option value="economy">economy</option>
+    </select>
   </div>
 
   <input type="hidden" name="registration[user_id]" id="registration_user_id" value="<%= current_user.id %>" />
-
-  <div class="field">
-    <%= form.label :flight_id %>
-    <%= form.number_field :flight_id %>
-  </div>
+  <input type="hidden" name="registration[flight_id]" id="registration_flight_id" value="<%= @flight.id %>">
 
   <div class="actions">
     <%= form.submit %>

@@ -12,6 +12,7 @@ class RegistrationsController < ApplicationController
 
   # GET /registrations/new
   def new
+    @flight = Flight.find(params[:flight_id])
     @registration = Registration.new
   end
 
