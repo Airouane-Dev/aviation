@@ -1,6 +1,8 @@
-<h1>Editing Flight</h1>
+<div style="text-align: center">
+  <h1>Editing Flight</h1>
+  <%= render 'form', flight: @flight %>
+  <%= link_to 'Show', @flight %> |
+  <%= link_to 'Back', flights_path %>
+</div>
 
-<%= render 'form', flight: @flight %>
 
-<%= link_to 'Show', @flight %> |
-<%= link_to 'Back', flights_path %>
