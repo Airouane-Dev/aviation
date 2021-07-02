@@ -3,7 +3,7 @@ class FlightsController < ApplicationController
 
   # GET /flights or /flights.json
   def index
-    @flights = Flight.all
+    @pagy, @flights = pagy(Flight.all)
   end
 
   # GET /flights/1 or /flights/1.json
